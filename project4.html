@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/css">
+      *{
+          box-sizing: border-box;
+      }
+      html,body{
+          margin: 0;
+          padding: 0;
+          
+          font-family: Arial, Helvetica, sans-serif;
+      }
+       .container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 100px 200px 200px 100px ;
+        gap: 5px;
+        margin: 5px;
+        padding: 5px;
+      } 
+       .navbox{
+        background-color: white;
+        grid-column: 1/6;
+        
+        }
+        .navbox1{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+        }
+        .navbox1 > nav > a{
+          color: black;
+          text-decoration: none;
+        }
+      
+        
+        .logo{
+          margin-right: auto;
+        }
+       
+       .flower{
+        background-color: gold;
+        grid-column: 1/5;
+        image-orientation: flip;
+        overflow: hidden;
+        background-image: url(assets/img/flower_design.jpg);
+        background-size: cover;
+        
+      }
+       .news{
+        background-color: black;
+        color: rgb(255, 255, 255);
+        grid-column: 5/6;
+        grid-row: 2/4;
+        
+        }
+         
+       .text{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        grid-column: 1/3;
+        font-weight: bolder;
+        font-size: x-large;
+        text-align: center;
+        padding: 0 auto;
+        
+      
+      }
+       .button{
+        background-color:whitesmoke;
+        grid-column: 3/5;
+        text-align: center;
+       }
+      
+       .footer{
+          background-color: gold;
+          grid-column: 1/6 ;
+          
+       }
+       .footer > nav{
+        display: flex;
+       }
+       
+      
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="navbox" >
+    <div class= "navbox1" >
+
+      <h1 class="logo">W.</h1>
+          <nav>
+            <a href="project3.html" target="_blank">Home</a>
+            <a href="index.html">New</a>
+            <a href="#">Popular</a>
+            <a href="#">Trending</a>
+            <a href="#">Categories</a>
+          </nav>
+    </div>
+  </div>
+  <div class="flower">
+   
+  </div>
+  <div class="news">
+    <h1>NEW</h1>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi deserunt vero consequatur ea perspiciatis perferendis, quidem quam cumque nam nisi?.br 
+    <hr>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sint reiciendis ipsum velit nulla consequuntur autem labore repudiandae quas quidem?.br
+    <hr>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque reprehenderit libero enim blanditiis fugit magnam maiores, aspernatur atque tempora veniam?.
+  </div>
+
+  <div class="text">
+        <div>
+          <p> <pre> 
+                    The Bright
+                    Future of
+                    Web 3.0?
+          </pre></p>
+        </div>
+  </div>
+
+  <div class="button">
+    <p>      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque maiores nemo eum a tempore, tenetur recusandae, soluta, aut accusamus neque similique doloremque eius doloribus ratione!
+    </p>
+    <button type="button">Read More <i>&rarr;</i></button>
+    <div class="footer">
+      <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, numquam?</P>
+      <nav>
+        <img src="assets/img/img01.JPG" alt="">
+        <img src="assets/img/img02.JPG" alt="">
+        <img src="assets/img/img03.JPG" alt="">
+      </nav>
+    </div>
+    
+</body>
+</html>
